@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <EditText
+        android:id="@+id/edt_field_question_name"
+        android:layout_width="179dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#00FFFFFF"
+        android:drawableEnd="@drawable/heart"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:padding="5dp"
+        android:text="@string/edt_field_question_name"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,LabelFor" />
+
+    <EditText
+        android:id="@+id/edt_field_question_credit"
+        android:layout_width="79dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="40dp"
+        android:background="#FFC525"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="@string/edt_field_question_credit"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/edt_field_question_name"
+        app:layout_constraintTop_toTopOf="@+id/edt_field_question_name"
+        tools:ignore="Autofill,LabelFor" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="41dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="32dp"
+        android:background="#A7670B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edt_field_question_credit"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@drawable/ic_diamond" />
+
+    <TextView
+        android:id="@+id/tv_field_question_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/tv_field_question_point"
+        android:textColor="#673AB7"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_field_question_name" />
+
+    <TextView
+        android:id="@+id/tv_field_question_number_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="148dp"
+        android:text="@string/tv_field_question_number_point"
+        android:textColor="#673AB7"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_field_question_point" />
+
+    <TextView
+        android:id="@+id/tv_field_question_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="@string/tv_field_question_question"
+        android:textColor="#1ED8F0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_field_question_number_point" />
+
+    <EditText
+        android:id="@+id/edt_display_question_number_question"
+        android:layout_width="121dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="16dp"
+        android:background="#1ED8F0"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/edt_field_question_number_points"
+        android:textColor="#FFFFFF"
+        android:textSize="80sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_field_question_question"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/tv_field_question_choose_field"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="@string/tv_field_question_choose_field"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_display_question_number_question" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_linh_vuc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_field_question_choose_field"
+        app:layout_constraintStart_toStartOf="@+id/tv_field_question_choose_field"
+        app:layout_constraintTop_toBottomOf="@+id/tv_field_question_choose_field" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

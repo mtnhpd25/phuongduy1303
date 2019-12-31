@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edt_display_answer_name"
+        android:layout_width="179dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#00FFFFFF"
+        android:drawableEnd="@drawable/heart"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/edt_display_question_name"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,LabelFor" />
+
+    <EditText
+        android:id="@+id/edt_display_answer_credit"
+        android:layout_width="79dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="40dp"
+        android:background="#FFC525"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="@string/edt_field_question_credit"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/edt_display_answer_name"
+        app:layout_constraintTop_toTopOf="@+id/edt_display_answer_name"
+        tools:ignore="Autofill,LabelFor" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="41dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="32dp"
+        android:background="#A7670B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edt_display_answer_credit"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@drawable/ic_diamond" />
+
+    <TextView
+        android:id="@+id/tv_display_answer_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/tv_field_question_point"
+        android:textColor="#673AB7"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_display_answer_name" />
+
+    <TextView
+        android:id="@+id/tv_display_answer_number_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/tv_field_question_number_point"
+        android:textColor="#673AB7"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_display_answer_point"
+        app:layout_constraintTop_toTopOf="@+id/tv_display_answer_point" />
+
+    <TextView
+        android:id="@+id/tv_display_answer_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="179dp"
+        android:text="@string/tv_field_question_question"
+        android:textColor="#1ED8F0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_display_answer_number_point" />
+
+    <EditText
+        android:id="@+id/edt_display_answer_number_question"
+        android:layout_width="121dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="164dp"
+        android:background="#1ED8F0"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/edt_field_question_number_points"
+        android:textColor="#FFFFFF"
+        android:textSize="80sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_display_answer_question"
+        tools:ignore="Autofill,LabelFor" />
+
+
+    <TextView
+        android:id="@+id/tv_display_answer_display_question"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_display_answer_number_question" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="62dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daD_textView"
+        app:srcCompat="@drawable/ic_clock" />
+
+    <TextView
+        android:id="@+id/tv_display_answer_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_display_question_second"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+    <Button
+        android:id="@+id/doiCauHoi_button"
+        android:layout_width="39dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="64dp"
+
+        android:layout_marginBottom="96dp"
+        android:background="#8B5404"
+        android:drawableStart="@drawable/ic_refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/loai2DA_button"
+        android:layout_width="39dp"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="13dp"
+        android:background="#8B5404"
+        android:drawableStart="@drawable/ic_5050"
+        app:layout_constraintBottom_toBottomOf="@+id/doiCauHoi_button"
+        app:layout_constraintStart_toEndOf="@+id/doiCauHoi_button" />
+
+    <Button
+        android:id="@+id/khanGia_button"
+        android:layout_width="39dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="13dp"
+        android:background="#8B5404"
+        android:drawableStart="@drawable/ic_khangia"
+        app:layout_constraintBottom_toBottomOf="@+id/doiCauHoi_button"
+        app:layout_constraintStart_toEndOf="@+id/loai2DA_button" />
+
+    <Button
+        android:id="@+id/goi_button"
+        android:layout_width="39dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:background="#8B5404"
+        android:drawableStart="@drawable/ic_phone"
+        app:layout_constraintBottom_toBottomOf="@+id/doiCauHoi_button"
+        app:layout_constraintStart_toEndOf="@+id/khanGia_button" />
+
+    <Button
+        android:id="@+id/muaDA_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:background="#8B5404"
+        android:drawableEnd="@drawable/ic_diamond"
+        android:text="100"
+        android:textColor="#FFCC33"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/doiCauHoi_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/goi_button" />
+
+    <TextView
+        android:id="@+id/daA_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/tv_display_answer_display_question"
+        app:layout_constraintStart_toStartOf="@+id/tv_display_answer_display_question"
+        app:layout_constraintTop_toBottomOf="@+id/tv_display_answer_display_question" />
+
+    <TextView
+        android:id="@+id/daB_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/tv_display_answer_display_question"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_display_answer_display_question"
+        app:layout_constraintTop_toBottomOf="@+id/daA_textView" />
+
+    <TextView
+        android:id="@+id/daC_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/tv_display_answer_display_question"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_display_answer_display_question"
+        app:layout_constraintTop_toBottomOf="@+id/daB_textView" />
+
+    <TextView
+        android:id="@+id/daD_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/tv_display_answer_display_question"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_display_answer_display_question"
+        app:layout_constraintTop_toBottomOf="@+id/daC_textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

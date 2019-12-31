@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cauHoi_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/item_cauHoi_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/paA_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/item_cauHoi_textView"
+            app:layout_constraintStart_toStartOf="@+id/item_cauHoi_textView"
+            app:layout_constraintTop_toBottomOf="@+id/item_cauHoi_textView" />
+
+        <TextView
+            android:id="@+id/paB_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/item_cauHoi_textView"
+            app:layout_constraintStart_toStartOf="@+id/item_cauHoi_textView"
+            app:layout_constraintTop_toBottomOf="@+id/paA_textView" />
+
+        <TextView
+            android:id="@+id/paC_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/item_cauHoi_textView"
+            app:layout_constraintStart_toStartOf="@+id/item_cauHoi_textView"
+            app:layout_constraintTop_toBottomOf="@+id/paB_textView" />
+
+        <TextView
+            android:id="@+id/paD_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/item_cauHoi_textView"
+            app:layout_constraintStart_toStartOf="@+id/item_cauHoi_textView"
+            app:layout_constraintTop_toBottomOf="@+id/paC_textView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

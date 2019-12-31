@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">QuizzGame</string>
+
+    <!--    forget_password-->
+    <string name="hint_forget_password_account">Tên đăng nhập</string>
+    <string name="hint_forget_password_email">Email</string>
+    <string name="btn_forget_password_get_password">Lấy lại mật khẩu</string>
+    <!--     -->
+
+    <!--    Login -->
+    <string name="btn_login_login">Đăng nhập</string>
+    <string name="btn_login_forget_password">Quên mật khẩu</string>
+    <string name="btn_login_register">Đăng ký</string>
+    <string name="tv_login_facebook">Đăng nhập với facebook</string>
+    <string name="tv_login_gmail">Đăng nhập với gmail</string>
+    <string name="edt_login_account">Tên đăng nhập</string>
+    <string name="edt_login_password">Mật khẩu</string>
+    <!--    -->
+
+    <!-- main_screen -->
+    <string name="tv_main_screen_name">Name</string>
+    <string name="tv_main_screen_number_diamond">2000</string>
+    <string name="btn_main_screen_manage">Quản lý tài khoản</string>
+    <string name="btn_main_screen_newgame">Trò chơi mới</string>
+    <string name="btn_main_screen_history">Lịch sử chơi</string>
+    <string name="btn_main_screen_rank">Bảng xếp hạng</string>
+    <string name="btn_main_screen_credit">Mua credit</string>
+    <!--    -->
+
+    <!--    register-->
+    <string name="text_register_account">Tên đăng nhập</string>
+    <string name="hint_register_account">Tên đăng nhập</string>
+    <string name="hint_register_email">Email</string>
+    <string name="hint_register_password">Mật khẩu</string>
+    <string name="hint_register_repass">Xác nhận mật khẩu</string>
+    <string name="btn_register_register">Đăng ký</string>
+    <!--    -->
+
+    <!--    manage_account-->
+    <string name="btn_manage_account_update">Cập nhật</string>
+    <string name="edt_manage_account_change">Đổi hình đại diện</string>
+    <string name="tv_manage_account_account">Tên đăng nhập</string>
+    <string name="tv_manage_account_email">Email</string>
+    <string name="tv_manage_account_change_password">Đổi mật khẩu</string>
+    <string name="tv_manage_account_confirm_password">Xác nhận mật khẩu</string>
+    <string name="edt_field_question_name">NHPDuy</string>
+    <string name="edt_field_question_credit">2,000</string>
+    <string name="tv_field_question_point">Điểm :</string>
+    <string name="tv_field_question_number_point">0</string>
+    <string name="tv_field_question_question">Câu hỏi</string>
+    <string name="edt_field_question_number_points">1</string>
+    <string name="tv_field_question_choose_field">Chọn lĩnh vực</string>
+    <string name="btn_field_question_science">Khoa học kỹ thuật</string>
+    <string name="btn_field_question_art">Văn hóa - xã hội - nghệ thuật</string>
+    <string name="btn_field_question_history">Lịch sử địa lý</string>
+    <string name="btn_field_question_sports">Thể thao</string>
+    <!--  Display question  -->
+    <string name="edt_display_question_name">NHPDuy</string>
+    <string name="btn_display_question_answer_A">Triều Ngô</string>
+    <string name="btn_display_question_answer_B">Triều Hồ</string>
+    <string name="btn_display_question_answer_C">Các chúa Nguyễn</string>
+    <string name="btn_display_question_answer_D">Nhà Tây Sơn</string>
+    <string name="tv_display_question_display_question">Đại Ngu là quốc hiệu của triều đại nào?</string>
+    <string name="tv_display_question_second">10s</string>
+    <!--    -->
+
+    <!--    field_question-->
+
+    <!--    -->
+
+
+</resources>
