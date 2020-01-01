@@ -1,6 +1,9 @@
 package com.cdth17pm.quizzgame;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,18 +20,18 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class choose_field extends AppCompatActivity implements LoaderManager.LoaderCallbacks<String> {
-    private RecyclerView mRecyclerView;
-    private LinhVucAdapter mAdapter;
-    public final ArrayList<LinhVuc> mListLinhVuc = new ArrayList<>();
+
+    Button[] button = new Button[3];
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_field);
 
-        this.mRecyclerView = findViewById(R.id.rcv_linh_vuc);
-        this.mAdapter =new LinhVucAdapter(this,this.mListLinhVuc);
-        this.mRecyclerView.setAdapter(this.mAdapter);
-        this.mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        button[0] = findViewById(R.id.button);
+        button[1] = findViewById(R.id.button2);
+        button[2] = findViewById(R.id.button3);
+        button[3] = findViewById(R.id.button4);
 
         if(getSupportLoaderManager().getLoader(0)!=null)
             getSupportLoaderManager().initLoader(0,null,this);
@@ -51,9 +54,18 @@ public class choose_field extends AppCompatActivity implements LoaderManager.Loa
             for(int i = 0 ; i<itemArray.length();i++){
                 int id = itemArray.getJSONObject(i).getInt("id");
                 String tenlv= itemArray.getJSONObject(i).getString("ten_linh_vuc");
-                this.mListLinhVuc.add(new LinhVuc(id,tenlv));
+                if(i<4) {
+                    button[i].setText(tenlv);
+                     button[i].setOnClickListener(new View.OnClickListener() {
+                         @Override
+                         public void onClick(View v) {
+                             Intent intent = new Intent(getApplicationContext(),display_question.class);
+                             intent.putExtra("linhvuc_id",0);
+                             startActivity(intent);
+                         }
+                     });
+                }
             }
-            this.mAdapter.notifyDataSetChanged();
         } catch (JSONException e) {
             e.printStackTrace();
         }

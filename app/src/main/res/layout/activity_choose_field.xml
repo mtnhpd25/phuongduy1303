@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     android:background="@drawable/background">
 
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#1ED8F0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
     <EditText
         android:id="@+id/edt_field_question_name"
         android:layout_width="179dp"
@@ -120,13 +131,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_display_question_number_question" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcv_linh_vuc"
+    <Button
+        android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:background="#1ED8F0"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/tv_field_question_choose_field"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/tv_field_question_choose_field"
         app:layout_constraintTop_toBottomOf="@+id/tv_field_question_choose_field" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#1ED8F0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#1ED8F0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
