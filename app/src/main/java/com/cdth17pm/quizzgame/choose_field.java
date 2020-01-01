@@ -52,7 +52,7 @@ public class choose_field extends AppCompatActivity implements LoaderManager.Loa
             JSONObject jsonObject = new JSONObject(data);
             JSONArray itemArray = jsonObject.getJSONArray("data");
             for(int i = 0 ; i<itemArray.length();i++){
-                int id = itemArray.getJSONObject(i).getInt("id");
+                final int id = itemArray.getJSONObject(i).getInt("id");
                 String tenlv= itemArray.getJSONObject(i).getString("ten_linh_vuc");
                 if(i<4) {
                     button[i].setText(tenlv);
@@ -60,7 +60,7 @@ public class choose_field extends AppCompatActivity implements LoaderManager.Loa
                          @Override
                          public void onClick(View v) {
                              Intent intent = new Intent(getApplicationContext(),display_question.class);
-                             intent.putExtra("linhvuc_id",0);
+                             intent.putExtra("linh_vuc_id",id);
                              startActivity(intent);
                          }
                      });
