@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -70,7 +69,7 @@ public class display_question extends AppCompatActivity implements LoaderManager
     }
 
     public void openDisplayAnswer(View view) {
-        Intent intent = new Intent(this, choose_answer.class);
+        Intent intent = new Intent(this, choose_answer_true.class);
         startActivity(intent);
     }
 
@@ -110,11 +109,10 @@ public class display_question extends AppCompatActivity implements LoaderManager
                     @Override
                     public void onClick(View v) {
                         //Đổi màu nút A khi được click
-                        if (dem <= 0) {
-                            paA_btn.setBackgroundColor(Color.parseColor("#FFC107"));
-                            dem++;
-                        } else {
-                            Toast.makeText(context, "Chỉ được chọn 1 đáp án", Toast.LENGTH_SHORT).show();
+                        paA_btn.setBackgroundColor(Color.parseColor("#FFC107"));
+                        if(Integer.parseInt(tv_count_down.getText().toString())==0 && paA_btn.getText().toString().equals(dap_an)){
+                            Intent intent = new Intent(getApplicationContext(),choose_answer_true.class);
+                            startActivity(intent);
                         }
                     }
                 });

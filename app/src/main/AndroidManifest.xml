@@ -15,8 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name=".choose_answer_false"></activity>
+        <activity android:name=".Rank" />
         <activity
-            android:name=".choose_answer"
+            android:name=".choose_answer_true"
             android:label=".display-answer"
             android:parentActivityName=".display_question">
             <meta-data

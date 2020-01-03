@@ -19,9 +19,9 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class choose_field extends AppCompatActivity implements LoaderManager.LoaderCallbacks<String> {
+    public class choose_field extends AppCompatActivity implements LoaderManager.LoaderCallbacks<String> {
 
-    Button[] button = new Button[3];
+    Button[] button = new Button[4];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,9 +48,9 @@ public class choose_field extends AppCompatActivity implements LoaderManager.Loa
     @Override
     public void onLoadFinished(@NonNull Loader<String> loader, String data) {
         try {
-
             JSONObject jsonObject = new JSONObject(data);
             JSONArray itemArray = jsonObject.getJSONArray("data");
+
             for(int i = 0 ; i<itemArray.length();i++){
                 final int id = itemArray.getJSONObject(i).getInt("id");
                 String tenlv= itemArray.getJSONObject(i).getString("ten_linh_vuc");
@@ -60,7 +60,7 @@ public class choose_field extends AppCompatActivity implements LoaderManager.Loa
                          @Override
                          public void onClick(View v) {
                              Intent intent = new Intent(getApplicationContext(),display_question.class);
-                             intent.putExtra("linh_vuc_id",id);
+                             intent.putExtra("linhvuc_id",id);
                              startActivity(intent);
                          }
                      });

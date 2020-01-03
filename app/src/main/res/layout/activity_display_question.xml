@@ -42,7 +42,7 @@
         tools:ignore="Autofill,LabelFor" />
 
     <EditText
-        android:id="@+id/edt_display_question_credit"
+        android:id="@+id/rank_tv_credit"
         android:layout_width="79dp"
         android:layout_height="22dp"
         android:layout_marginStart="32dp"
@@ -63,8 +63,8 @@
         android:layout_marginEnd="24dp"
         android:background="#A7670B"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/edt_display_question_credit"
-        app:layout_constraintTop_toTopOf="@+id/edt_display_question_credit"
+        app:layout_constraintStart_toEndOf="@+id/rank_tv_credit"
+        app:layout_constraintTop_toTopOf="@+id/rank_tv_credit"
         tools:ignore="ContentDescription"
         tools:srcCompat="@drawable/ic_diamond" />
 

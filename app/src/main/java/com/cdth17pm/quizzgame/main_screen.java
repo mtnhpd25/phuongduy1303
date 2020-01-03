@@ -23,4 +23,9 @@ public class main_screen extends AppCompatActivity {
         Intent intent = new Intent (this,choose_field.class);
         startActivity(intent);
     }
+
+    public void openRanking(View view) {
+        Intent intent = new Intent(this,Rank.class);
+        startActivity(intent);
+    }
 }
